@@ -1,0 +1,13 @@
+<!-- <div class="map" style="background-image: url('<%#= @flat.picture_url %>')"></div> -->
+
+<div class="container">
+    <h1><%= @cocktail.name %></h1>
+    <% @cocktail.doses.each do |dose| %>
+    <%= dose.description %>
+    <%= dose.ingredient.name %>
+    <% end %>
+    <%= link_to "New dose", new_cocktail_dose_path(@cocktail) %>
+    |
+    <%= link_to "Home", cocktails_path %>
+    |
+</div>

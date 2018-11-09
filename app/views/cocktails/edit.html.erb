@@ -1,0 +1,12 @@
+<div class="container">
+  <br>
+  <%= simple_form_for @cocktail do |f| %>
+  <div class="form-group">
+  <%= f.input :name %>
+  </div>
+  <div class="form-group">
+  <%= f.association :ingredients %>
+  </div>
+  <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
