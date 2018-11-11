@@ -1,0 +1,29 @@
+
+// .row {
+//   display: flex;
+//   // justify-content: space-around;
+//
+// }
+// .cocktail-image {
+//   margin-left: 50px;
+// }
+
+.show-container {
+  margin-top: 40px;
+}
+
+.cocktail-image {
+  margin: 0px 50px;
+  // display: flex;
+  // flex-direction: column;
+  .btn-container {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+  }
+}
+
+.btn-container .btn {
+  color: white;
+  margin: 10px;
+}

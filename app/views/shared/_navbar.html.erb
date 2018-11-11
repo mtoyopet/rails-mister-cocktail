@@ -1,0 +1,25 @@
+<div class="navbar-cocktail">
+  <!-- Logo -->
+  <div class="navbar-cocktail-brand">
+    <%= link_to cocktails_path do %>
+    <%= image_tag "cocktail.png", class: "cocktail-logo" %>
+      <% end %>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-cocktail-add-btn hidden-xs hidden-sm">
+    <%= link_to " Add cocktail", new_cocktail_path, class: "btn btn-primary" %></i>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-cocktail-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-cocktail-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

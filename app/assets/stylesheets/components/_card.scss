@@ -1,0 +1,35 @@
+.container-card {
+  margin: 20px;
+  overflow-wrap: break-word;
+  // word-wrap: break-word;
+}
+
+.card {
+  height: 200px;
+  // text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 20px;
+}
+
+.card:hover {
+
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  .card-name {
+    color: white;
+    font-size: 24px;
+    opacity: 0.8;
+    text-shadow: 1px 1px #68705E;
+    word-break: break-all;
+  }
+}
+
+.card-description .card-name:hover {
+
+}
