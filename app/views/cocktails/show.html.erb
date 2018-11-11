@@ -1,6 +1,5 @@
 <!-- <div class="map" style="background-image: url('<%#= @flat.picture_url %>')"></div> -->
 <div class="cocktail-show">
-
   <div class="show-container">
     <div class="row">
       <div class="cocktail-image col-lg-4">
@@ -14,7 +13,7 @@
           <!-- <%#= link_to @cocktail.name, method: :delete, data: { confirm: "Are you sure?"} do %>
           <i class="fa fa-trash destroy-dose"></i></h1>
           <%# end %> -->
-          <h4 class="text-secondary">Ingredients</h4>
+          <h4 class="text-color">Ingredients</h4>
         <% @cocktail.doses.each do |dose| %>
           <strong><%= dose.ingredient.name%></strong>
           <%= dose.description %>
@@ -25,5 +24,4 @@
       </div>
     </div>
   </div>
-
 </div>
